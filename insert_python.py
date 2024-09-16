@@ -35,7 +35,7 @@ def data():
                     database=dbname,
                     settings={"numpy_columns": True, 'use_numpy': True},
                     compression=True)
-    res = client.execute('select chrt_id, nm_id from dictionary.Chrt limit 100')
+    res = client.execute('select chr, nms from dictionary.Chrnms limit 100')
 
     return res
 
